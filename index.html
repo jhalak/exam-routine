@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="examroutine">
+	<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	 <title>Exam routine with angular JS</title>
+	 <script src="lib/angular/angular.min.js"></script>
+	 <script src="js/app.js"></script>
+	 <script src="js/controller.js"></script>
+	</head>
+  <body ng-controller="MainController">
+    <ul>
+      <li><a ng-click="setRoute('home')">Home</a></li>
+      <li><a ng-click="setRoute('about')">about</a></li>
+    </ul>
+    <div ng-view></div>
+  </body>
+</html>
