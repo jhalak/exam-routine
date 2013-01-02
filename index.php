@@ -1,5 +1,6 @@
 <?php
-if ($_GET['home']) {
+if ($_GET['action'] == 'home') {
+  //echo 'asdfasdfasdf';
   $data = array('Helo angular');
   echo prepareJsonOutput(1, $data);
 }
